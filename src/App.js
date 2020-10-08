@@ -15,11 +15,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('http://api.octranspo1.com/v1.3/GetNextTripsForStop?appID=9558d7ea&apiKey=45f450a3480871cb9965070ac9a51040&stopNo=3037&format=json&routeNo=6')
     .then(res => res.json())
     .then((data) => {
       console.log(data);
-      this.setState({ next3bus: data })
+      this.setState({ next3bus: data.GetNextTripsForStopResult.Route.RouteDirection[1].Trips.Trip })
     })
     .catch(console.log)
   }
