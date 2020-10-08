@@ -66,3 +66,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Dev notes. 
+> react-router-dom
+> react-bootstrap
+
+- offline mode need to add file to cache 
+- Testing in incognito mode to avoid cashing 
+- once cashed change service wokrer to offline mode to in Chrome devtools Application tab
+- route cache 
+- fetching API 
+- react table (bootstrap)
+- render the list
